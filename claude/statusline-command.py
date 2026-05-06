@@ -1,19 +1,14 @@
 #!/usr/bin/env python3
 """Claude Code statusline — colorful, compact."""
 
-from datetime import datetime
 import json
 import os
 import re
 import subprocess
 import sys
-from zoneinfo import ZoneInfo
 
 RESET = "\033[0m"
 ANSI_CODE_RE = re.compile(r"^\d+(?:;\d+)*$")
-PEAK_TIMEZONE = ZoneInfo("America/Sao_Paulo")
-PEAK_START_HOUR = 9
-PEAK_END_HOUR = 15
 
 
 def colors_enabled() -> bool:
@@ -45,11 +40,6 @@ def to_float(value: object) -> float | None:
         except ValueError:
             return None
     return None
-
-
-def is_peak_period(now: datetime | None = None) -> bool:
-    current = now.astimezone(PEAK_TIMEZONE) if now is not None else datetime.now(PEAK_TIMEZONE)
-    return PEAK_START_HOUR <= current.hour < PEAK_END_HOUR
 
 
 def main() -> None:
@@ -105,10 +95,6 @@ def main() -> None:
     weekly = to_float((rate_limits.get("seven_day") or {}).get("used_percentage"))
     if weekly is not None:
         parts.append(rate_pill(weekly, "weekly"))
-
-    peak_label = "peak" if is_peak_period() else "off-peak"
-    peak_color = "1;31" if peak_label == "peak" else "1;32"
-    parts.append(c(peak_color, peak_label))
 
     print(sep.join(parts), end="")
 

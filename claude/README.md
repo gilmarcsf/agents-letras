@@ -8,7 +8,6 @@ Statusline custom pro Claude Code. Substitui a barra padrão por uma versão com
 - diretório atual com `~` resolvido
 - branch git
 - uso do rate limit de 5h e semanal
-- indicador `peak` / `off-peak` baseado em America/Sao_Paulo (9h-15h é peak)
 
 ![statusline](statusline.png)
 
@@ -25,7 +24,7 @@ Em `~/.claude/settings.json`:
 }
 ```
 
-Requer Python 3.9+ (usa `zoneinfo`).
+Requer Python 3.9+.
 
 ## Cores
 

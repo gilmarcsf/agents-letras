@@ -28,7 +28,7 @@ Funciona em qualquer ferramenta que respeite o padrão `AGENTS.md` (Codex, outra
 
 Configs específicas do Claude Code.
 
-- [`statusline-command.py`](claude/statusline-command.py) — statusline custom com modelo, contexto restante, custo, branch, rate limits e indicador peak/off-peak
+- [`statusline-command.py`](claude/statusline-command.py) — statusline custom com modelo, contexto restante, custo, branch e rate limits
 - [`README.md`](claude/README.md) — como instalar a statusline
 
 ## skills/
