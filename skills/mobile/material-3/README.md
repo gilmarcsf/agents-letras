@@ -28,7 +28,7 @@ Guide MD3-compliant UI generation across three stacks with clear primacy:
 gh repo clone hamen/material-3-skill /tmp/m3 -- --depth 1
 rsync -a --delete \
   --exclude='.git' --exclude='CONTRIBUTING.md' --exclude='assets/m3-hero.png' \
-  /tmp/m3/ ~/Developer/agents/skills/material-3/
+  /tmp/m3/ skills/mobile/material-3/
 # Preserve local agents/openai.yaml + this README by restoring after rsync, or use --exclude above.
 ```
 

@@ -1,6 +1,6 @@
 ---
 name: android-bootstrap
-description: Scaffold, build, test, and package Android apps without Android Studio. Use when you need a from-scratch Kotlin/Compose Android app layout on top of `android create`, with ktlint, pre-commit hooks, JUnit + MockK + Turbine tests, Compose UI tests, Makefile-driven dev loop, and AAB signing/release steps outside the IDE.
+description: Scaffold, build, test, run, and package Kotlin/Compose Android apps from the command line.
 ---
 
 # Android Bootstrap (No Android Studio)
@@ -31,7 +31,7 @@ Bootstrap a Kotlin + Jetpack Compose Android app folder using the `android` CLI,
 Shortest path from zero to a running app:
 ```bash
 # 1. Bootstrap a new project
-~/Developer/agents/skills/android-bootstrap/assets/templates/scripts/bootstrap.sh HelloApp com.example.hello ~/Projects/HelloApp
+skills/mobile/android-bootstrap/assets/templates/scripts/bootstrap.sh HelloApp com.example.hello ~/Projects/HelloApp
 cd ~/Projects/HelloApp
 
 # 2. Dev loop

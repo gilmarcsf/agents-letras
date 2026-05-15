@@ -1,6 +1,6 @@
 ---
 name: xcodebuildmcp-cli
-description: Official skill for the XcodeBuildMCP CLI. Use when doing iOS/macOS/watchOS/tvOS/visionOS work (build, test, run, debug, log, UI automation).
+description: Use XcodeBuildMCP for Apple platform build, test, run, debug, logs, and UI automation.
 ---
 
 # XcodeBuildMCP CLI

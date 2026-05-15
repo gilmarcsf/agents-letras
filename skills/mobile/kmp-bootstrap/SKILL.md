@@ -1,6 +1,6 @@
 ---
 name: kmp-bootstrap
-description: Scaffold, build, test, and release a Kotlin Multiplatform app (Android + iOS) without Android Studio or tight IDE coupling. Uses the AGP 9 "full restructure" layout (shared library + dedicated per-platform app modules), Compose Multiplatform UI, ktlint, pre-commit hooks, JUnit + MockK + Turbine + Android host tests for shared code, xcrun-simctl-driven iOS run, and AAB + XCFramework release via gh.
+description: Scaffold, build, test, run, and release Kotlin Multiplatform Android+iOS apps from the command line.
 ---
 
 # KMP Bootstrap (No Android Studio, No Xcode iteration required)
@@ -33,7 +33,7 @@ Bootstrap a Kotlin Multiplatform project following the AGP 9 full restructure la
 ## Minimum End-to-End Example
 Shortest path from zero to a running app on Android and iOS:
 ```bash
-~/Developer/agents/skills/kmp-bootstrap/assets/templates/scripts/bootstrap.sh HelloKMP com.example.hellokmp ~/Projects/HelloKMP
+skills/mobile/kmp-bootstrap/assets/templates/scripts/bootstrap.sh HelloKMP com.example.hellokmp ~/Projects/HelloKMP
 cd ~/Projects/HelloKMP
 
 # Android

@@ -1,4 +1,0 @@
-interface:
-  display_name: "eXtreme Go Horse"
-  short_description: "Ship code fast, no questions asked"
-  default_prompt: "Use $xgh to deliver code at maximum speed following the eXtreme Go Horse methodology."

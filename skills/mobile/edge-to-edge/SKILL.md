@@ -1,9 +1,6 @@
 ---
 name: edge-to-edge
-description: Use this skill to migrate your Jetpack Compose app to add adaptive edge-to-edge
-  support and troubleshoot common issues. Use this skill to fix UI components (like
-  buttons or lists) that are obscured by or overlapping with the navigation bar or
-  status bar, fix IME insets, and fix system bar legibility.
+description: Add or fix adaptive edge-to-edge support, system bars, IME insets, and legibility in Compose apps.
 license: Complete terms in LICENSE.txt
 metadata:
   author: Google LLC

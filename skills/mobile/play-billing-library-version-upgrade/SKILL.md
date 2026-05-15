@@ -1,8 +1,6 @@
 ---
 name: play-billing-library-version-upgrade
-description: Use this skill when upgrading or migrating an Android project from any
-  legacy Google Play Billing Library (PBL) version to the latest stable version of
-  PBL.
+description: Upgrade Android projects from legacy Google Play Billing Library versions to the latest stable PBL.
 license: Complete terms in LICENSE.txt
 metadata:
   author: Google LLC

@@ -1,6 +1,6 @@
 ---
 name: review-and-simplify-changes
-description: "Review a git diff or explicit file scope for reuse, code quality, efficiency, clarity, and standards issues, then optionally apply safe Codex-driven fixes. Use when the user asks to \"simplify code\", \"review changed code\", \"check for code reuse\", \"review code quality\", \"review efficiency\", \"simplify changes\", \"clean up code\", \"refactor changes\", or \"run simplify\"."
+description: Review or safely simplify a diff for reuse, clarity, efficiency, quality, and standards issues.
 ---
 
 # Review and Simplify Changes

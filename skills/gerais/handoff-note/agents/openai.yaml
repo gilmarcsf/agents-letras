@@ -1,4 +1,0 @@
-interface:
-  display_name: "Handoff Note"
-  short_description: "Write a temporary root handoff.md for re-entry"
-  default_prompt: "Use $handoff-note to create or refresh a temporary repo-root handoff.md for leaving this session, with the current slice, done work, next step, blockers, and verification."

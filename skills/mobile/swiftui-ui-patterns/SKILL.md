@@ -1,6 +1,6 @@
 ---
 name: swiftui-ui-patterns
-description: Best practices and example-driven guidance for building SwiftUI views and components, including navigation hierarchies, custom view modifiers, and responsive layouts with stacks and grids. Use when creating or refactoring SwiftUI UI, designing tab architecture with TabView, composing screens with VStack/HStack, managing @State or @Binding, building declarative iOS interfaces, or needing component-specific patterns and examples.
+description: Build or refactor SwiftUI views, navigation, state, layout, and reusable UI patterns.
 ---
 
 # SwiftUI UI Patterns

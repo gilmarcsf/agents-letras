@@ -28,6 +28,6 @@ ln -sf "$(pwd)/skills/gerais/how" ~/.claude/skills/how
 
 | Categoria | O que tem | Link |
 |---|---|---|
-| **Gerais** | Ferramentas de uso amplo: automação de browser, CLI do GitHub, bootstrap de `AGENTS.md`, exploração de código, entrevista de design, handoff/reentry, XGH | [`gerais/`](gerais/README.md) |
+| **Gerais** | Ferramentas de uso amplo: automação de browser, CLI do GitHub, bootstrap de `AGENTS.md`, exploração de código e entrevista de design | [`gerais/`](gerais/README.md) |
 | **Mobile** | Android (AGP, R8, Compose, KMP, Play Billing, Navigation 3, edge-to-edge) e Apple (SwiftUI, Swift Concurrency, XcodeBuildMCP) | [`mobile/`](mobile/README.md) |
 | **Review** | Revisão de diffs em paralelo com subagentes e simplificação automática de mudanças | [`review/`](review/README.md) |

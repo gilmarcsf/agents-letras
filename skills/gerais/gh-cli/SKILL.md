@@ -1,6 +1,6 @@
 ---
 name: gh-cli
-description: GitHub CLI (gh) comprehensive reference for repositories, issues, pull requests, Actions, projects, releases, gists, codespaces, organizations, extensions, and all GitHub operations from the command line.
+description: Use GitHub CLI for repositories, issues, pull requests, Actions, releases, checks, and safe GitHub operations.
 ---
 
 # GitHub CLI (gh)
@@ -39,9 +39,6 @@ gh auth login
 # Login with specific hostname
 gh auth login --hostname enterprise.internal
 
-# Login with token
-gh auth login --with-token < mytoken.txt
-
 # Check authentication status
 gh auth status
 
@@ -57,9 +54,6 @@ gh auth logout --hostname github.com --user username
 ```bash
 # Configure git to use gh as credential helper
 gh auth setup-git
-
-# View active token
-gh auth token
 
 # Refresh authentication scopes
 gh auth refresh --scopes write:org,read:public_key
@@ -103,12 +97,9 @@ gh
 ```bash
 gh auth login                              # Interactive login
 gh auth login --hostname enterprise.local  # Enterprise login
-gh auth login --with-token < token.txt     # Token login
 gh auth logout                             # Logout
 gh auth status                             # Check status
-gh auth status --show-token               # Show active token
 gh auth switch --user username             # Switch account
-gh auth token                              # Print active token
 gh auth refresh --scopes write:packages    # Add scopes
 gh auth setup-git                          # Configure git credential helper
 ```
@@ -561,10 +552,8 @@ gh repo sync --branch main
 ## Environment Variables
 
 ```bash
-GH_TOKEN          # Auth token (overrides stored credentials)
 GH_HOST           # Default GitHub host
 GH_REPO           # Default repo (owner/repo format)
-GH_ENTERPRISE_TOKEN  # Enterprise auth token
 NO_COLOR          # Disable color output
 GH_NO_UPDATE_NOTIFIER  # Disable update notifications
 ```

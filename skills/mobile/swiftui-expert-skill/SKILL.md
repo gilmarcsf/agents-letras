@@ -1,6 +1,6 @@
 ---
 name: swiftui-expert-skill
-description: Write, review, or improve SwiftUI code following Apple-native best practices for simple MV architecture, `@Observable`-first state management, view composition, performance, and optional iOS 26+ Liquid Glass adoption. Use when building new SwiftUI features, refactoring existing views, standardizing SwiftUI architecture, reviewing code quality, or adopting modern SwiftUI patterns / Liquid Glass.
+description: Write, review, or improve SwiftUI with native state, view composition, performance, and modern APIs.
 ---
 
 # SwiftUI Expert Skill

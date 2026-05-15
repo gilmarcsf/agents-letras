@@ -1,6 +1,6 @@
 ---
 name: swift-concurrency
-description: 'Expert guidance on Swift Concurrency best practices, patterns, and implementation. Use when developers mention: (1) Swift Concurrency, async/await, actors, or tasks, (2) "use Swift Concurrency" or "modern concurrency patterns", (3) migrating to Swift 6 or Swift 6.2, (4) approachable concurrency or main-actor-by-default, (5) data races or thread safety issues, (6) refactoring closures to async/await, (7) @MainActor, Sendable, isolated conformances, or actor isolation, (8) concurrent code architecture or performance optimization, (9) concurrency-related linter warnings (SwiftLint or similar; e.g. async_without_await, Sendable/actor isolation/MainActor lint).'
+description: Use for Swift Concurrency: async/await, actors, tasks, Sendable, isolation, data races, and Swift 6 migration.
 ---
 # Swift Concurrency
 

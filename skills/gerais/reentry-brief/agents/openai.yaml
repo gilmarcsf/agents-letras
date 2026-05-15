@@ -1,4 +1,0 @@
-interface:
-  display_name: "Reentry Brief"
-  short_description: "Reconstruct the active slice before continuing work"
-  default_prompt: "Use $reentry-brief to rebuild the active slice of work from repo state, unstaged files, thread context, and any handoff before continuing. If handoff.md is consumed, remove it."

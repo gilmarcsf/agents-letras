@@ -1,6 +1,6 @@
 ---
 name: agents-bootstrap
-description: Create or refresh a repo-local AGENTS.md and CLAUDE.md symlink from a compact template. Use when a repository needs project-specific agent instructions such as workflow, source-of-truth files, architecture boundaries, decision tables, validation commands, naming rules, testing defaults, or repo conventions that do not belong in the global ~/.agents/AGENTS.md.
+description: Create or refresh repo-local AGENTS.md and CLAUDE.md from a compact project-specific template.
 ---
 
 # Agents Bootstrap

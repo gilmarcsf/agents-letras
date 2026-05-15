@@ -86,9 +86,9 @@ Bootstrap does `cp -R` + overwrite `Config.xcconfig` — no dependency on `gh`, 
 If you ever need to re-capture (template upstream adds something you want):
 ```bash
 gh repo clone JetBrains/compose-multiplatform-template /tmp/tpl -- --depth 1
-rm -rf ~/Developer/agents/skills/kmp-bootstrap/assets/templates/iosApp
-cp -R /tmp/tpl/iosApp ~/Developer/agents/skills/kmp-bootstrap/assets/templates/iosApp
-SKEL=~/Developer/agents/skills/kmp-bootstrap/assets/templates/iosApp
+rm -rf skills/mobile/kmp-bootstrap/assets/templates/iosApp
+cp -R /tmp/tpl/iosApp skills/mobile/kmp-bootstrap/assets/templates/iosApp
+SKEL=skills/mobile/kmp-bootstrap/assets/templates/iosApp
 # Swift entry point matches our Kotlin symbol:
 sed -i '' 's/Main_iosKt\.MainViewController/MainViewControllerKt.MainViewController/g' "$SKEL/iosApp/ContentView.swift"
 # Display label for the .app product:

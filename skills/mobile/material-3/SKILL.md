@@ -1,11 +1,6 @@
 ---
 name: material-3
-description: >
-  Implement Google's Material Design 3 (Material You) UI system. Primary: Jetpack Compose
-  Material3 (MaterialTheme, components, adaptive layout). Also Flutter and limited web
-  (@material/web, maintenance mode). Covers tokens, 30+ components, layout, theming,
-  M3 Expressive (platform matrix), and accessibility. Use when: "material design", "MD3",
-  "material you", "Jetpack Compose", "MaterialTheme", "material component", "md3 button".
+description: Implement or review Material Design 3 in Compose, including tokens, theming, components, layout, and accessibility.
 user-invokable: true
 argument-hint: "[component|theme|layout|scaffold|audit] [description or URL]"
 ---
