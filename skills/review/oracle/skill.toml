@@ -1,0 +1,7 @@
+version = 1
+name = "oracle"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Local guidance for using the @steipete/oracle CLI; no remote skill source recorded."

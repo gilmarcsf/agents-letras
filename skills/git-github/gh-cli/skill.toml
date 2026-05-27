@@ -1,0 +1,12 @@
+version = 1
+name = 'gh-cli'
+remote = true
+dirty = true
+license = 'MIT'
+status = 'adapted'
+notes = 'Rewritten as local GitHub CLI workflow guidance while preserving upstream provenance.'
+
+[[sources]]
+url = 'https://github.com/github/awesome-copilot/tree/main/skills/gh-cli'
+ref = 'main'
+path = 'skills/gh-cli'

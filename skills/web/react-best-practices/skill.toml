@@ -1,0 +1,11 @@
+version = 1
+name = "react-best-practices"
+remote = true
+dirty = false
+license = "MIT"
+status = "clean"
+
+[[sources]]
+url = "https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices"
+ref = "main"
+path = "skills/react-best-practices"

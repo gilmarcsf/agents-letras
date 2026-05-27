@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent Coordination"
+  short_description: "Delegate Codex sub-agent work with exact contracts"
+  default_prompt: "Use $subagent-coordination to split this work into precise sub-agent contracts with ownership and verification."

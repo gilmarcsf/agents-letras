@@ -1,4 +1,0 @@
-interface:
-  display_name: "Android Bootstrap"
-  short_description: "Scaffold and package Android apps without Studio"
-  default_prompt: "Use $android-bootstrap to scaffold, build, test, or release a Kotlin/Compose Android app without Android Studio."

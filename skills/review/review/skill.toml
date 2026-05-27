@@ -1,0 +1,22 @@
+version = 1
+name = "review"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Owned local consolidated review skill. Upstream sources are references for manual updates only."
+
+[[sources]]
+url = "https://github.com/steipete/agent-scripts/tree/main/skills/github-deep-review"
+ref = "main"
+path = "skills/github-deep-review"
+
+[[sources]]
+url = "https://github.com/steipete/agent-scripts/tree/main/skills/github-author-context"
+ref = "main"
+path = "skills/github-author-context"
+
+[[sources]]
+url = "https://github.com/steipete/agent-scripts/tree/main/skills/codex-review"
+ref = "main"
+path = "skills/codex-review"

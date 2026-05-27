@@ -1,0 +1,11 @@
+version = 1
+name = "pricing-strategy"
+remote = true
+dirty = false
+license = "MIT"
+status = "clean"
+
+[[sources]]
+url = "https://github.com/coreyhaines31/marketingskills/tree/main/skills/pricing-strategy"
+ref = "main"
+path = "skills/pricing-strategy"

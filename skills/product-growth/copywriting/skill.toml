@@ -1,0 +1,11 @@
+version = 1
+name = "copywriting"
+remote = true
+dirty = false
+license = "MIT"
+status = "clean"
+
+[[sources]]
+url = "https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting"
+ref = "main"
+path = "skills/copywriting"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product UI Direction"
+  short_description: "Turn product briefs into UI direction"
+  default_prompt: "Use $product-ui-direction to define product category, operating mode, pattern, style family, palette, typography, interaction intensity, and anti-patterns before implementation."

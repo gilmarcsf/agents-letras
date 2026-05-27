@@ -1,0 +1,12 @@
+version = 1
+name = "frontend-skill"
+remote = false
+dirty = false
+license = "Apache-2.0"
+status = "unknown"
+notes = "README records this source, but the GitHub API returned not found on 2026-05-08; confirm before enabling remote updates."
+
+[[sources]]
+url = "https://github.com/openai/skills/tree/main/skills/.curated/frontend-skill"
+ref = "main"
+path = "skills/.curated/frontend-skill"

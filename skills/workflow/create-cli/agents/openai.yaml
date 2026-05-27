@@ -1,0 +1,4 @@
+interface:
+  display_name: "CLI Design"
+  short_description: "Design CLI parameters and UX"
+  default_prompt: "Use $create-cli to design arguments, flags, subcommands, help text, and output formats for a CLI tool."

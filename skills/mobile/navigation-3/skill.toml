@@ -1,0 +1,11 @@
+version = 1
+name = 'navigation-3'
+remote = true
+dirty = false
+license = 'Apache-2.0'
+status = 'clean'
+
+[[sources]]
+url = 'https://github.com/android/skills/tree/main/navigation/navigation-3'
+ref = 'main'
+path = 'navigation/navigation-3'

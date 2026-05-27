@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Design Guidelines"
+  short_description: "Audit UI against Vercel Web Guidelines"
+  default_prompt: "Use $web-design-guidelines to audit this web UI code against the latest Vercel Web Interface Guidelines."

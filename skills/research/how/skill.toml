@@ -1,0 +1,10 @@
+version = 1
+name = 'how'
+remote = true
+dirty = false
+license = 'MIT'
+status = 'clean'
+
+[[sources]]
+url = 'https://github.com/poteto/how'
+ref = 'main'

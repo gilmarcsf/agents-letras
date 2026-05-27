@@ -1,21 +1,26 @@
 ---
 name: android-cli
-description: Use the Android CLI for project creation, deployment, SDK management, and diagnostics.
+description: Orchestrates Android development tasks including project creation, deployment, SDK management, and environment diagnostics using the `android` command-line tool.
+license: Complete terms in LICENSE.txt
+metadata:
+  author: Google LLC
+  keywords:
+    - AndroidCLI
 ---
 # Android CLI Specialist
 
 This skill provides instructions for using the `android` CLI tool. The tool includes various commands for creating projects, running applications, interacting with devices, and managing the CLI environment.
 
-## Sdk management
-You can manage the installation of Android SDKs and tools using the `sdk` command for example
+## SDK management
+To manage the installation of Android SDKs and tools, use the `sdk` command. For example:
 
-- `android sdk install <package>[@<version>]...`: Install specific packages. Multiple packages can be specified. `<version>` defaults to latest. e.g. `android sdk install "platforms;android-34"`
+- `android sdk install <package>[@<version>]...`: Install specific packages. Multiple packages can be specified, separated by spaces. `<version>` defaults to latest. For example: `android sdk install "platforms;android-34"`
 - `android sdk update [<pkg-name>]`: Update a specific package or all packages to the latest version.
 - `android sdk remove <pkg-name>`: Remove a package from the local SDK.
 - `android sdk list --all`: List installed and available SDK packages.
 
-##  Project creation
-You can create projects from templates using the `create` command.
+## Project creation
+Create projects from templates using the `create` command.
 
 For example: `android create empty-activity --name="My App" --output=./my-app`
 
@@ -28,7 +33,7 @@ For more information on running journeys, see [here](journeys.md)
 ## Doc searching
 The `docs` command searches authoritative, high-quality Android developer documentation in the Android Knowledge Base.
 By providing a few keywords, this tool will return high quality articles that contain examples or guidance on how to use Android APIs or libraries.
-Use this tool to obtain additional information on how to achieve Android-specific tasks or to know more about Android APIs, surfaces, libraries or devices.
+Use this tool to obtain additional information on how to achieve Android-specific tasks or to know more about Android APIs, surfaces, libraries, or devices.
 
 Always use this tool to get the most up-to-date information about Android concepts. Typical good use cases are:
   - Finding migration guides for APIs.
@@ -37,7 +42,7 @@ Always use this tool to get the most up-to-date information about Android concep
   - Finding best practices for Android concepts.
 
 ## Running APKs
-Use the `run` command to run Android Application.
+Use the `run` command to run Android apps.
 
 For custom script-based launchers, prefer:
 - resolve the launchable activity: `adb shell cmd package resolve-activity --brief <package>`
@@ -62,7 +67,7 @@ For automation, treat `android emulator` as discovery and simple control, not th
 - If `adb devices` shows `unauthorized`, treat it as an auth failure, not a slow boot. Export `ADB_VENDOR_KEYS="$HOME/.android"`, restart adb, and accept the RSA prompt.
 
 ## Capturing screenshots
-Capture an image of the current screen of a connected Android device and outputs it to a file using the `android screenshot` command.
+Capture an image of the current screen of a connected Android device and output it to a file using the `android screenshot` command.
 
 ## Managing skills
 Manage antigravity agent skills for Android using the `android skills` command.

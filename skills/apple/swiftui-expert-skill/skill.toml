@@ -1,0 +1,21 @@
+version = 1
+name = "swiftui-expert-skill"
+remote = true
+dirty = true
+license = "MIT"
+status = "adapted"
+
+[[sources]]
+url = "https://github.com/AvdLee/SwiftUI-Agent-Skill/tree/main/swiftui-expert-skill"
+ref = "main"
+path = "swiftui-expert-skill"
+
+[[sources]]
+url = "https://github.com/Dimillian/Skills/tree/main/swiftui-liquid-glass"
+ref = "main"
+path = "swiftui-liquid-glass"
+
+[[sources]]
+url = "https://github.com/Dimillian/Skills/tree/main/swiftui-view-refactor"
+ref = "main"
+path = "swiftui-view-refactor"

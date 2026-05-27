@@ -1,33 +1,48 @@
-# Skills
+# skills
 
-Skills são instruções especializadas que o agente carrega sob demanda quando o pedido casa com a `description` no frontmatter de cada `SKILL.md`. Funcionam em qualquer agente que respeite o padrão (Claude Code, Codex, OpenCode, etc).
+Skills source.
 
-## Como funciona
+Cada skill é uma pasta com `SKILL.md` no topo. O repo organiza essas pastas por categoria para leitura humana. Ferramentas como Claude e Codex geralmente esperam um runtime flat, por isso quem usa `skills-cli` roda sync para gerar `.runtime/skills`.
 
-- Cada skill é uma pasta com um `SKILL.md` no nível superior — esse é o ponto de entrada que o agente lê.
-- A skill dispara automaticamente quando o pedido casa com os gatilhos descritos. Algumas também aceitam invocação explícita via `/<nome>`.
+## Dois jeitos de usar
 
-## Aviso sobre o aninhamento
+### Manual
 
-**Claude Code e Codex não suportam skills em pastas aninhadas.** A skill tem que ficar direto no diretório varrido — sem categoria no caminho:
-
-- **Codex:** `~/.agents/skills/<nome>/SKILL.md` (path oficial)
-- **Claude Code:** `~/.claude/skills/<nome>/SKILL.md` — não lê de `~/.agents/` nativamente; pra reaproveitar a mesma pasta, faz `ln -s ~/.agents/skills ~/.claude/skills`
-
-As subpastas `gerais/`, `mobile/` e `review/` aqui no repo são **só pra organização visual**. Pra usar localmente, copia ou symlinka **a pasta da skill em si** (não a categoria):
+Copie ou symlinke uma skill específica:
 
 ```bash
-# Exemplo: skill "how" da categoria "gerais"
-# Codex
-ln -sf "$(pwd)/skills/gerais/how" ~/.agents/skills/how
-# Claude Code
-ln -sf "$(pwd)/skills/gerais/how" ~/.claude/skills/how
+ln -sf "$(pwd)/skills/mobile/android-cli" "$HOME/.claude/skills/android-cli"
 ```
+
+### Com skills-cli
+
+```bash
+skills --config skills.toml plan --plain
+skills --config skills.toml sync --apply
+```
+
+O runtime gerado em `.runtime/skills` não é versionado.
 
 ## Categorias
 
-| Categoria | O que tem | Link |
-|---|---|---|
-| **Gerais** | Ferramentas de uso amplo: automação de browser, CLI do GitHub, bootstrap de `AGENTS.md`, exploração de código e entrevista de design | [`gerais/`](gerais/README.md) |
-| **Mobile** | Android (AGP, R8, Compose, KMP, Play Billing, Navigation 3, edge-to-edge) e Apple (SwiftUI, Swift Concurrency, XcodeBuildMCP) | [`mobile/`](mobile/README.md) |
-| **Review** | Revisão de diffs em paralelo com subagentes e simplificação automática de mudanças | [`review/`](review/README.md) |
+| Categoria | Uso |
+|---|---|
+| `apple/` | Swift, SwiftUI, Xcode e plataformas Apple |
+| `automation/` | Reservado para automações genéricas |
+| `cloud/` | Reservado para cloud e infra |
+| `fun/` | Fluxos experimentais ou criativos |
+| `gerais/` | Compatibilidade com a organização antiga |
+| `git-github/` | GitHub, PRs, issues e branches |
+| `mobile/` | Android, KMP, Gradle, emulator e mobile UI |
+| `product-growth/` | Produto, copy, pricing e direção |
+| `research/` | Exploração e explicação de codebase |
+| `review/` | Revisão de diff e qualidade |
+| `web/` | Frontend, React, Next.js, UI e performance |
+| `workflow/` | Handoff, pickup, skills-cli e coordenação |
+
+Depois de editar skills:
+
+```bash
+skills --config skills.toml validate --plain
+skills --config skills.toml plan --plain
+```

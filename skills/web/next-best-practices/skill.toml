@@ -1,0 +1,11 @@
+version = 1
+name = "next-best-practices"
+remote = true
+dirty = false
+license = "No explicit license found in the upstream repository when this metadata was written."
+status = "clean"
+
+[[sources]]
+url = "https://github.com/vercel-labs/next-skills/tree/main/skills/next-best-practices"
+ref = "main"
+path = "skills/next-best-practices"

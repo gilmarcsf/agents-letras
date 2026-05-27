@@ -1,0 +1,4 @@
+interface:
+  display_name: "Copywriting"
+  short_description: "Write and improve marketing copy for any page"
+  default_prompt: "Use $copywriting to write, rewrite, or improve marketing copy for homepages, landing pages, pricing pages, feature pages, or about pages."

@@ -1,4 +1,0 @@
-interface:
-  display_name: "How"
-  short_description: "Explain how something works in this codebase"
-  default_prompt: "Use $how to explore the codebase and produce a clear architectural explanation. Optionally critique the architecture for issues."

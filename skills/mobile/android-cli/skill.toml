@@ -1,0 +1,12 @@
+version = 1
+name = "android-cli"
+remote = true
+dirty = true
+license = "Apache-2.0"
+status = "adapted"
+notes = "Local copy adds emulator automation and deterministic launch guidance."
+
+[[sources]]
+url = "https://github.com/android/skills/tree/main/android-cli/base"
+ref = "main"
+path = "android-cli/base"

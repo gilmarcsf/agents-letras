@@ -1,0 +1,4 @@
+interface:
+  display_name: "Emil Design Engineering"
+  short_description: "Design engineering principles for polished, accessible web interfaces"
+  default_prompt: "Use $emil-design-engineering when building UI components, reviewing frontend code, implementing forms, handling touch interactions, optimizing performance, or creating marketing pages."

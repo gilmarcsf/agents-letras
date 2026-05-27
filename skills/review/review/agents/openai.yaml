@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review"
+  short_description: "Diff, PR, issue, CI, comments, and closeout review"
+  default_prompt: "Use $review to review the current scope, choose the right workflow, identify real findings, and report proof plus residual risk."

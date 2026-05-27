@@ -1,0 +1,12 @@
+version = 1
+name = "pickup"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Owned local pickup workflow. Prompt behavior is folded into a skill; upstream source is a reference for manual updates only."
+
+[[sources]]
+url = "https://github.com/steipete/agent-scripts/tree/main/docs/slash-commands/pickup.md"
+ref = "main"
+path = "docs/slash-commands/pickup.md"

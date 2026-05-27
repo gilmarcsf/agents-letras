@@ -1,0 +1,7 @@
+version = 1
+name = "verification-closeout"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Local workflow for selecting and reporting task verification."

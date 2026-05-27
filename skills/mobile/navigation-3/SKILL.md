@@ -1,6 +1,10 @@
 ---
 name: navigation-3
-description: Install, migrate, or implement Jetpack Navigation 3 flows, scenes, deep links, results, and integrations.
+description: Learn how to install and migrate to Jetpack Navigation 3, and how to
+  implement features and patterns such as deep links, multiple backstacks, scenes
+  (dialogs, bottom sheets, list-detail, two-pane, supporting pane), conditional navigation
+  (such as logged-in navigation vs anonymous), returning results from flows, integration
+  with Hilt, ViewModel, Kotlin, and view interoperability.
 license: Complete terms in LICENSE.txt
 metadata:
   author: Google LLC

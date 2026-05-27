@@ -1,31 +1,44 @@
-# statusline
+# claude
 
-Statusline custom pro Claude Code. Substitui a barra padrão por uma versão compacta e colorida, com:
+Config para Claude Code.
 
-- modelo em uso
-- contexto restante (verde > 50%, amarelo 20-50%, vermelho < 20%)
-- custo acumulado da sessão
-- diretório atual com `~` resolvido
-- branch git
-- uso do rate limit de 5h e semanal
+## Arquivos
 
-![statusline](statusline.png)
+- `settings.json`: preferências globais do Claude, permissões, statusline e comportamento padrão.
+- `mcp.json`: template de MCP servers. Usa env vars para tokens; não guarda valores secretos.
+- `statusline-command.py`: statusline custom com modelo, contexto restante, custo, branch e rate limits.
+- `statusline.png`: preview visual da statusline.
 
 ## Instalação
 
-Em `~/.claude/settings.json`:
+O installer cria:
 
-```json
-{
-  "statusLine": {
-    "type": "command",
-    "command": "python3 /caminho/para/statusline-command.py"
-  }
-}
+```text
+~/.agents/claude             -> <repo>/claude
+~/.claude/settings.json      -> ~/.agents/claude/settings.json
+~/.claude/CLAUDE.md          -> ~/.agents/AGENTS.md
+~/.claude/agents             -> ~/.agents/agents
+~/.claude/skills             -> ~/.agents/skills
 ```
 
-Requer Python 3.9+.
+`mcp.json` fica versionado como template. Se alguém quiser ativar no Claude:
 
-## Cores
+```bash
+ln -sf "$HOME/.agents/claude/mcp.json" "$HOME/.claude/mcp.json"
+```
 
-Honra `NO_COLOR` e `CLAUDE_STATUSLINE_NO_COLOR=1` pra ambientes sem ANSI.
+## Statusline
+
+`settings.json` chama:
+
+```text
+python3 ~/.agents/claude/statusline-command.py
+```
+
+Requer Python 3.9+. A statusline honra `NO_COLOR` e `CLAUDE_STATUSLINE_NO_COLOR=1`.
+
+## Segurança
+
+Não coloque tokens reais neste diretório. Se uma integração exigir credencial, cada pessoa deve configurar o valor fora do repo.
+
+Esta versão usa permissões mais seguras que uma config pessoal com bypass total. Quem quiser modo mais permissivo deve configurar isso localmente.

@@ -68,7 +68,7 @@ import kotlinx.serialization.Serializable
 data object Home : NavKey
 
 @Serializable
-class PersonDetailsForm : NavKeyhttps://github.com/android/nav3-recipes/blob/d2a2288a393dfa373e02b04c48c483cd9add9dbf/app/src/main/java/com/example/nav3recipes/results/common/NavKeys.kt
+class PersonDetailsForm : NavKey
 ```
 
 ```
@@ -94,7 +94,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Person(val name: String, val favoriteColor: String) : Parcelablehttps://github.com/android/nav3-recipes/blob/d2a2288a393dfa373e02b04c48c483cd9add9dbf/app/src/main/java/com/example/nav3recipes/results/common/Person.kt
+data class Person(val name: String, val favoriteColor: String) : Parcelable
 ```
 
 ```
@@ -215,10 +215,12 @@ import com.example.nav3recipes.results.common.HomeScreen
 import com.example.nav3recipes.results.common.Person
 import com.example.nav3recipes.results.common.PersonDetailsForm
 import com.example.nav3recipes.results.common.PersonDetailsScreen
+import com.example.nav3recipes.ui.setEdgeToEdgeConfig
 
 class ResultStateActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setEdgeToEdgeConfig()
         super.onCreate(savedInstanceState)
 
         setContent {

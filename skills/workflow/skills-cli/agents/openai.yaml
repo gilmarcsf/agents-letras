@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skills CLI"
+  short_description: "Curate local agent skills"
+  default_prompt: "Use $skills-cli to curate, import, archive, sync, update, or inspect local agent skills with the skills CLI."

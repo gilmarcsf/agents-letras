@@ -1,0 +1,11 @@
+version = 1
+name = "next-cache-components"
+remote = true
+dirty = false
+license = "No explicit license found in the upstream repository when this metadata was written."
+status = "clean"
+
+[[sources]]
+url = "https://github.com/vercel-labs/next-skills/tree/main/skills/next-cache-components"
+ref = "main"
+path = "skills/next-cache-components"

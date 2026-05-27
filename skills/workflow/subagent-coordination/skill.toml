@@ -1,0 +1,7 @@
+version = 1
+name = "subagent-coordination"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Local workflow for disciplined Codex sub-agent delegation."

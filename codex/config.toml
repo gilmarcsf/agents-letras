@@ -1,0 +1,139 @@
+#:schema https://developers.openai.com/codex/config-schema.json
+
+# Baseline do Codex.
+#
+# Este arquivo funciona como ~/.codex/config.toml direto. Config local, cache,
+# projetos confiáveis, tokens, OAuth, paths absolutos e estado do app ficam fora.
+
+# Modelo e comportamento padrão.
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+review_model = "gpt-5.5"
+personality = "friendly"
+service_tier = "fast"
+web_search = "live"
+
+# Segurança padrão.
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+# Limites úteis para sessões longas sem depender de estado local.
+background_terminal_max_timeout = 900_000
+suppress_unstable_features_warning = true
+tool_output_token_limit = 25_000
+model_auto_compact_token_limit = 233_000
+project_doc_max_bytes = 65_536
+project_doc_fallback_filenames = ["CLAUDE.md"]
+
+# Coordenação de subagentes.
+[agents]
+max_threads = 4
+max_depth = 1
+
+# Histórico local continua local; esta seção só define a política padrão.
+[history]
+persistence = "save-all"
+max_bytes = 50_000_000
+
+# Memórias do Codex, quando disponíveis.
+[memories]
+disable_on_external_context = true
+consolidation_model = "gpt-5.4-mini"
+min_rollout_idle_hours = 12
+
+# Avisos menos úteis depois do primeiro uso.
+[notice]
+hide_full_access_warning = true
+hide_rate_limit_model_nudge = true
+fast_default_opt_out = true
+
+# Flags de produto que este setup espera encontrar ativas.
+[features]
+apply_patch_streaming_events = true
+chronicle = true
+goals = true
+memories = true
+prevent_idle_sleep = true
+runtime_metrics = true
+tool_search_always_defer_mcp_tools = true
+js_repl = false
+terminal_resize_reflow = true
+mentions_v2 = true
+
+# Preferências de TUI.
+[tui]
+theme = "catppuccin-mocha"
+session_picker_view = "dense"
+terminal_resize_reflow_max_rows = 3000
+status_line = [
+  "model-with-reasoning",
+  "project-name",
+  "git-branch",
+  "pull-request-number",
+  "branch-changes",
+  "context-remaining",
+  "weekly-limit",
+  "fast-mode",
+]
+terminal_title = [
+  "activity",
+  "project-name",
+  "git-branch",
+  "run-state",
+  "context-remaining",
+]
+
+[tui.keymap.editor]
+insert_newline = "shift-enter"
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."google-drive@openai-curated"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."build-macos-apps@openai-curated"]
+enabled = true
+
+[plugins."build-ios-apps@openai-curated"]
+enabled = true
+
+[plugins."cloudflare@openai-curated"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."codex-security@openai-curated"]
+enabled = true
+
+[plugins."test-android-apps@openai-curated"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+# Skills antigas/duplicadas do plugin GitHub que ficam desligadas por padrão.
+[[skills.config]]
+name = "github:yeet"
+enabled = false
+
+[[skills.config]]
+name = "github:github"
+enabled = false
+
+[[skills.config]]
+name = "github:gh-address-comments"
+enabled = false

@@ -1,4 +1,0 @@
-interface:
-  display_name: "KMP Bootstrap"
-  short_description: "Scaffold and release Kotlin Multiplatform apps (Android + iOS)"
-  default_prompt: "Use $kmp-bootstrap to scaffold, build, test, or release a Kotlin Multiplatform app (Android + iOS) without Android Studio."

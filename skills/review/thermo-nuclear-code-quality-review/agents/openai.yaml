@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thermo-Nuclear Review"
+  short_description: "Strict maintainability and structure review"
+  default_prompt: "Use $thermo-nuclear-code-quality-review to run an extremely strict maintainability review focused on structural regressions, code-judo simplification, spaghetti branching, file size, boundaries, and abstraction quality."

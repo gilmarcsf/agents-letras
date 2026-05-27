@@ -1,0 +1,16 @@
+version = 1
+name = "swift-concurrency"
+remote = true
+dirty = true
+license = "MIT"
+status = "adapted"
+
+[[sources]]
+url = "https://github.com/AvdLee/Swift-Concurrency-Agent-Skill/tree/main/swift-concurrency"
+ref = "main"
+path = "swift-concurrency"
+
+[[sources]]
+url = "https://github.com/Dimillian/Skills/tree/main/swift-concurrency-expert"
+ref = "main"
+path = "swift-concurrency-expert"

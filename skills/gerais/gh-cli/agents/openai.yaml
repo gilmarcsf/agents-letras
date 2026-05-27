@@ -1,4 +1,0 @@
-interface:
-  display_name: "GitHub CLI"
-  short_description: "Comprehensive gh CLI reference for all GitHub operations"
-  default_prompt: "Use $gh-cli for a complete reference of gh commands: repos, issues, PRs, Actions, projects, releases, and GitHub API."

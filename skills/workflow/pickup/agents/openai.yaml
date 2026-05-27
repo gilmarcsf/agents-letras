@@ -1,0 +1,5 @@
+version: 1
+skill:
+  id: pickup
+  short_description: "Rehydrate current task context"
+  default_prompt: "Use $pickup to rebuild the current slice from repo state, handoff notes, diffs, local docs, PR/issue state, and the latest thread constraints before continuing."

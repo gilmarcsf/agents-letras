@@ -1,0 +1,11 @@
+version = 1
+name = "material-3"
+remote = true
+dirty = true
+license = "MIT"
+status = "adapted"
+notes = "Local agents/openai.yaml and repository README are maintained locally."
+
+[[sources]]
+url = "https://github.com/hamen/material-3-skill"
+ref = "master"

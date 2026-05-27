@@ -1,0 +1,16 @@
+version = 1
+name = "web-design-guidelines"
+remote = true
+dirty = true
+license = "MIT"
+status = "adapted"
+notes = "Local copy combines the Vercel agent skill with the public Web Interface Guidelines."
+
+[[sources]]
+url = "https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines"
+ref = "main"
+path = "skills/web-design-guidelines"
+
+[[sources]]
+url = "https://github.com/vercel-labs/web-interface-guidelines"
+ref = "main"

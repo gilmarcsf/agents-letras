@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verification Closeout"
+  short_description: "Choose and report proof before finishing work"
+  default_prompt: "Use $verification-closeout to verify the current change, run the right proof, inspect the diff, and report what passed."

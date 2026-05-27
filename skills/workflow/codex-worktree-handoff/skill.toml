@@ -1,0 +1,7 @@
+version = 1
+name = "codex-worktree-handoff"
+remote = false
+dirty = false
+license = "MIT"
+status = "local"
+notes = "Local workflow skill for preparing and completing Codex App worktree handoffs."

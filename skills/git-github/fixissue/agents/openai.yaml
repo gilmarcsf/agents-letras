@@ -1,0 +1,5 @@
+version: 1
+skill:
+  id: fixissue
+  short_description: "Fix a GitHub issue with proof"
+  default_prompt: "Use $fixissue to inspect the issue, identify or reproduce the failing path, fix the root cause, add regression coverage when appropriate, and report proof without pushing or closing unless asked."

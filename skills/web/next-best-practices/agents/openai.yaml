@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Best Practices"
+  short_description: "Apply Next.js production best practices"
+  default_prompt: "Use $next-best-practices for file conventions, RSC boundaries, data patterns, metadata, error handling, and optimization in Next.js."

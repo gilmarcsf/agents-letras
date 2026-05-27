@@ -1,0 +1,11 @@
+version = 1
+name = 'skill-cleaner'
+remote = true
+dirty = false
+license = 'MIT'
+status = 'clean'
+
+[[sources]]
+url = 'https://github.com/steipete/agent-scripts/tree/main/skills/skill-cleaner'
+ref = 'main'
+path = 'skills/skill-cleaner'

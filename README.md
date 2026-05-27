@@ -1,42 +1,61 @@
 # agents-letras
 
-Configuração compartilhada para agentes de código (Claude Code, Codex, OpenCode). Compartilhada como referência — pega o que faz sentido, ignora o resto.
+Setup versionado para agentes de código: instruções globais, skills, subagents, configs de Claude/Codex, scripts de instalação e docs operacionais.
 
-## O que tem aqui
+Este repo versiona o que é útil reaproveitar. Ele não versiona runtime gerado, trusted projects, tokens, caches, logs, pets ou estado sensível específico de uma máquina.
 
+## Modos de uso
+
+### Simples
+
+Use os arquivos diretamente:
+
+- `AGENTS.md` como instrução base.
+- `skills/<categoria>/<skill>/` como catálogo de skills source.
+- `claude/statusline-command.py` se quiser a statusline custom do Claude.
+
+Nesse modo não precisa rodar installer nem `skills-cli`.
+
+### Completo
+
+Use o installer:
+
+```bash
+./install.sh
 ```
-agents-letras/
-├── AGENTS.md          # instruções compartilhadas entre os agentes
-├── docs/              # documentações
-├── claude/            # configs específicas do Claude Code
-│   ├── statusline-command.py
-│   ├── statusline.png
-│   └── README.md
-└── skills/            # skills agrupadas por categoria
-    ├── gerais/        # uso amplo (browser, gh, bootstrap, code reading)
-    ├── mobile/        # Android e iOS/Apple
-    └── review/        # revisão de diff e simplificação
+
+Ele cria um hub em `~/.agents`, gera `.runtime/skills` com o `skills-cli`, aplica a config do Codex e cria symlinks para Claude e Codex.
+
+## Layout
+
+```text
+AGENTS.md              # instruções base para agentes
+agents/                # subagents
+claude/                # settings, MCP template e statusline do Claude
+codex/                 # config, regras e custom agents do Codex
+docs/                  # docs de arquitetura, import, GitHub e tooling
+scripts/               # helpers de sync, validação e config
+skills/                # skills source, agrupadas por categoria
+skills.toml            # config do skills-cli
+install.sh             # installer idempotente por symlink
+.githooks/             # hooks locais opcionais
 ```
 
-## AGENTS.md
+## O que fica fora
 
-É o "system prompt" que cada agente lê antes de trabalhar. Define como o agente deve se comunicar, executar, testar, commitar, etc. É opinativo e reflete um estilo pessoal de trabalho.
+- `.runtime/`: gerado pelo `skills-cli`.
+- trusted projects, OAuth, IDs de usuário e histórico local.
+- `codex/plugins-cache` e `codex/plugin-sources`: caches locais.
+- `pets/`: não faz parte deste repo.
+- secrets, tokens, `.env*`, trusted projects, logs e dumps de ambiente.
 
-Funciona em qualquer ferramenta que respeite o padrão `AGENTS.md` (Codex, outras) ou via symlink pra `~/.claude/CLAUDE.md` no caso do Claude Code.
+## Validação
 
-## claude/
+```bash
+skills --config skills.toml validate --plain
+skills --config skills.toml plan --plain
+python3 scripts/validate-docs.py
+git diff --check
+```
 
-Configs específicas do Claude Code.
-
-- [`statusline-command.py`](claude/statusline-command.py) — statusline custom com modelo, contexto restante, custo, branch e rate limits
-- [`README.md`](claude/README.md) — como instalar a statusline
-
-## skills/
-
-Skills são módulos de instrução que o agente carrega sob demanda quando o pedido casa com a `description` no `SKILL.md` da skill. Cada subpasta é uma categoria temática com seu próprio README detalhando o que tem dentro:
-
-- [`gerais/`](skills/gerais/README.md) — automação de browser, `gh` CLI, bootstrap de AGENTS.md, exploração de código, stress-test de design
-- [`mobile/`](skills/mobile/README.md) — Android (AGP 9, R8, Compose, KMP, Material 3, Navigation 3, Play Billing) e Apple (SwiftUI, Swift Concurrency, Xcode CLI)
-- [`review/`](skills/review/README.md) — review em paralelo com subagentes e simplificação automática de diffs
-
-Pra usar localmente, copia ou symlinka a pasta da skill pra `~/.claude/skills/<nome>/` (global) ou `.claude/skills/<nome>/` (no projeto).
+Quem não usa `skills-cli` pode ignorar os comandos de skills e copiar/symlinkar as pastas manualmente.

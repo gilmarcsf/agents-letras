@@ -1,0 +1,5 @@
+version: 1
+skill:
+  id: landpr
+  short_description: "Land a PR with proof"
+  default_prompt: "Use $landpr to inspect PR state, comments, checks, and diff, fix blockers in scope, run proof, merge only when acceptable, and verify the final GitHub state."

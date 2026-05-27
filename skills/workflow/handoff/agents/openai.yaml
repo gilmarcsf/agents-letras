@@ -1,0 +1,5 @@
+version: 1
+skill:
+  id: handoff
+  short_description: "Capture a compact session handoff"
+  default_prompt: "Use $handoff to capture the current repo, goal, dirty state, proof run, blockers, and next safe step without turning it into a project TODO list."

@@ -1,0 +1,12 @@
+version = 1
+name = "thermo-nuclear-code-quality-review"
+remote = false
+dirty = false
+license = "Unknown"
+status = "local"
+notes = "Imported manually from cursor/plugins at a pinned commit because skills import does not clone arbitrary commit SHAs as refs. Keep local agent wiring in sync with agents/thermo-nuclear-code-quality-review.md."
+
+[[sources]]
+url = "https://github.com/cursor/plugins/tree/3347cbab5b54136f6fba0994c3a01a56f7fb7fca/cursor-team-kit/skills/thermo-nuclear-code-quality-review"
+ref = "3347cbab5b54136f6fba0994c3a01a56f7fb7fca"
+path = "cursor-team-kit/skills/thermo-nuclear-code-quality-review"

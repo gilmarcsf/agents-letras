@@ -1,0 +1,7 @@
+version = 1
+name = "xcodebuildmcp-cli"
+remote = false
+dirty = false
+license = "Unknown"
+status = "unknown"
+notes = "Skill wraps the xcodebuildmcp CLI; no public skill source found via GitHub search."

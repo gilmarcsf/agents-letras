@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Cache Components"
+  short_description: "Implement Next.js 16 cache patterns"
+  default_prompt: "Use $next-cache-components for PPR, use cache directive, cacheLife, cacheTag, and updateTag in Next.js 16."

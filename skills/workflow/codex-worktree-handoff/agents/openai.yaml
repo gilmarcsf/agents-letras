@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Worktree Handoff"
+  short_description: "Move Codex worktree experiments back to a branch cleanly"
+  default_prompt: "Use $codex-worktree-handoff to prepare or complete a Codex App worktree handoff while preserving native app cleanup and keeping the final branch history free of merge commits."

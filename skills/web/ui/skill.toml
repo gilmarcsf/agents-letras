@@ -1,0 +1,7 @@
+version = 1
+name = "ui"
+remote = false
+dirty = false
+license = "Unknown"
+status = "external"
+notes = "Runtime source is uidotsh://ui; not updateable through git metadata."

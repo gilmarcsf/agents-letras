@@ -1,9 +1,0 @@
-
-# --- android-bootstrap additions ---
-keystores/
-*.keystore
-*.jks
-.signing.env
-*.env.local
-*.aab
-*.apk

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Review & Simplify"
-  short_description: "Review and simplify code changes"
-  default_prompt: "Use $review-and-simplify-changes to review the current diff for reuse, quality, efficiency, and clarity issues."

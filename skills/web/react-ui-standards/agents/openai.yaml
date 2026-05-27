@@ -1,0 +1,4 @@
+interface:
+  display_name: "React UI Standards"
+  short_description: "Enforce React and Tailwind UI standards"
+  default_prompt: "Use $react-ui-standards to enforce opinionated React and Tailwind standards and prevent AI slop in UI code."

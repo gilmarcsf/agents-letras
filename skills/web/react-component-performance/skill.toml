@@ -1,0 +1,11 @@
+version = 1
+name = 'react-component-performance'
+remote = true
+dirty = false
+license = 'MIT'
+status = 'clean'
+
+[[sources]]
+url = 'https://github.com/Dimillian/Skills/tree/main/react-component-performance'
+ref = 'main'
+path = 'react-component-performance'

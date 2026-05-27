@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pricing Strategy"
+  short_description: "Design pricing tiers, value metrics, and monetization"
+  default_prompt: "Use $pricing-strategy to design pricing tiers, choose value metrics, research willingness to pay, or plan a price increase."

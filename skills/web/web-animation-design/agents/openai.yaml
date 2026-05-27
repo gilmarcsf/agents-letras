@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Animation Design"
+  short_description: "Design web animations that feel natural and purposeful"
+  default_prompt: "Use $web-animation-design for questions about animations, motion, easing, timing, duration, springs, transitions, or animation performance."
